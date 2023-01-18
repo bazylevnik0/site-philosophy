@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="h-100">
+ <%- include ("../partials/header-index.ejs") %>
+ <style>
+    input {
+	color : black;
+    }
+ </style>
+ <body class="d-flex h-100 text-center text-white bg-dark">
+    
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <%- include ("../partials/nav-global.ejs") %>
+
+    <main class="px-3">
+      <form id="input" name="input" method="POST" action="/submit">
+	<label for="title">Заголовок:</label><br>
+	<input type="text" for="input" name="title" class="text" id="title">
+	<br>
+	<label for="text">Текст:</label><br>
+        <p>
+	  <textarea for="input" name="text" class="text" id="body" rows="20" cols="80" color="gray"></textarea>
+	</p>
+	<br>
+   	<button for="input">Отправить</button>
+      </form>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+      <p>*При отправке модератор увидит имя под которым вы зарегистрованы.</p>   
+    </footer>
+  </div>
+
+
+    
+ </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" class="h-100">
+ <%- include ("../partials/header-index.ejs") %>
+ <body class="d-flex h-100 text-center text-gray bg-light">
+    
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <%- include ("../partials/nav-global.ejs") %>
+
+    <main class="px-3">
+       <% for (var i = 0; i < texts_out.length; i++) { %>
+	  <div class="article"> 
+	   <a class="link" href=<%- "/text" + texts_out[i].slice(0,-4) %>> 
+		<h2> <%- texts_out[i].slice(0,-4) %> </h2>
+		<p class="lead">
+			<%- include ("../../public/articles/"+texts_out[i]) %>
+		</p> 
+	   </a>
+	  </div>
+       <% } %>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    </footer>
+  </div>
+
+ </body>
+</html>

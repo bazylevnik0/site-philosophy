@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" class="h-100">
+ <%- include ("../partials/header-index.ejs") %>
+ <script src="https://kit.fontawesome.com/33807fe85e.js" crossorigin="anonymous"></script>
+ <body class="d-flex h-100 text-center text-gray bg-light">
+    
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <%- include ("../partials/nav-global.ejs") %>
+
+    <main class="px-3">
+      <a href="/login" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Войти</a>
+      <p class="lead">
+	 <p>Чат для обсуждения: <a href="https://t.me/joinchat/ZE_NRK72cbRkYTEy" class="text-blue">telegram.</a></p>
+      </p>
+      <div id="soc">
+	 <a href="https://twitter.com/nearphilosophy"><i class="fab fa-twitter fa-lg"></i></a>
+	 <a href="https://www.instagram.com/nearphilosophy"><i class="fab fa-instagram fa-lg"></i></a>
+      </div>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+	Сайт не использует куки :) 
+	<br>
+	Если что-то по работе сайта, то вы сможете найти меня в чате.
+	<br>
+	<p style="font-size: 8px">
+	*Но если вы войдете то информация о вас как о пользователе будет хранится в Auth0, а также возможно что-то собирает платформа(heroku) на которой расположен сайт, но это неточно. 
+	</p>
+    </footer>
+  </div>
+
+
+    
+ </body>
+</html>

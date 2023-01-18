@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" class="h-100">
+ <%- include ("../partials/header-index.ejs") %>
+ <style>
+  .mb-auto {
+    margin-bottom: 100px!important;
+  }
+ </style>
+ <body class="d-flex h-100 text-center text-gray bg-light">
+    
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <%- include ("../partials/nav-global.ejs") %>
+    <main class="px-3">
+	<div class="text">
+	   <%- include ("../../public/articles/"+reading_out+".ejs") %>
+   	</div>
+    </main>
+  </div>
+
+    
+ </body>
+</html>
